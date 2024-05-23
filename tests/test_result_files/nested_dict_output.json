@@ -1,0 +1,65 @@
+[
+    {
+        "EPC Discovery Details": {
+            "Attribute Name": "Cable Service Switchers - Top 10% - Highly Likely",
+            "Attribute Size": 24291570,
+            "Attribute Path List": [
+                "Epsilon",
+                "Market Trends",
+                "Adhoc Custom Audiences"
+            ],
+            "Attribute Path String": "Epsilon < Market Trends < Adhoc Custom Audiences"
+        },
+        "Taxonomy": {
+            "Categorization": {
+                "Friendly Name": "Cable Service",
+                "Categories": [
+                    "Switcher"
+                ]
+            },
+            "Never Use": false
+        }
+    },
+    {
+        "EPC Discovery Details": {
+            "Attribute Name": "Internet Service Switchers - Top 10% - Highly Likely",
+            "Attribute Size": 20767312,
+            "Attribute Path List": [
+                "Epsilon",
+                "Market Trends",
+                "Adhoc Custom Audiences"
+            ],
+            "Attribute Path String": "Epsilon < Market Trends < Adhoc Custom Audiences"
+        },
+        "Taxonomy": {
+            "Categorization": {
+                "Friendly Name": "Internet Service",
+                "Categories": [
+                    "Switcher"
+                ]
+            },
+            "Never Use": false
+        }
+    },
+    {
+        "EPC Discovery Details": {
+            "Attribute Name": "Mobile Phone Service Switchers - Top 10% - Highly Likely",
+            "Attribute Size": 29599568,
+            "Attribute Path List": [
+                "Epsilon",
+                "Market Trends",
+                "Adhoc Custom Audiences"
+            ],
+            "Attribute Path String": "Epsilon < Market Trends < Adhoc Custom Audiences"
+        },
+        "Taxonomy": {
+            "Categorization": {
+                "Friendly Name": "Mobile Phone Service",
+                "Categories": [
+                    "Switcher"
+                ]
+            },
+            "Never Use": false
+        }
+    }
+]

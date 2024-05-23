@@ -1,0 +1,7 @@
+TestOpenPyxlReadUtilities:
+  TestExcelFile1:
+    ExcelFilePath: './tests/test_data/test_file_discovery_taxonomy.xlsx'
+    WorksheetName: Test Data
+    HeaderRowNumber: 1
+    DataStartRowNumber: 2
+    StartingColumnNumber: 1
