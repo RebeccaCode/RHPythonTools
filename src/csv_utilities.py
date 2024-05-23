@@ -35,8 +35,8 @@ class CsvUtilities:
 
     @staticmethod
     def write_csv_json_from_dict(the_dict, file_path, delimiter='|'):
-        write_csv_from_dict(the_dict, file_path, delimiter)
-        write_json_from_dict(the_dict, file_path)
+        CsvUtilities.write_csv_from_dict(the_dict, file_path, delimiter)
+        CsvUtilities.write_json_from_dict_list_each_element_single_line(the_dict, file_path)
 
     @staticmethod
     def read_csv_to_list_of_dict(csv_file_path, delimiter='|'):
