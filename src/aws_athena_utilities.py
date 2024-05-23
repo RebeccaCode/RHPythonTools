@@ -7,30 +7,29 @@ class AwsAthenaUtilities:
             key_column_name=key_column_name,
             column_name_to_be_counted=value_column_name,
             database__dot_table_name=database_dot_table_name)
-        
+
         all_subquery_strings = '\n, '.join(list(group_subquery_dict.values()))
-        
+
         union_subquery_template = \
-"""
-select column_name, try_cast(column_value as varchar) as column_value, column_value_count from group{group_number}
-"""     
+            """
+            select column_name, try_cast(column_value as varchar) as column_value, column_value_count from group{group_number}
+            """
         union_subquery_list = []
         for group_number in group_subquery_dict.keys():
             union_subquery = union_subquery_template.format(group_number=group_number)
             union_subquery_list.append(union_subquery)
         union_strings = '\nunion all\n'.join(union_subquery_list)
         main_query_template = \
-f"""
+            f"""
 with 
 {all_subquery_strings}
 {union_strings}
 """
-        
+
         result = main_query_template.format(all_subquery_strings=all_subquery_strings,
                                             union_strings=union_strings)
-        
+
         return result
-        
 
     @staticmethod
     def __build_pivot_query_group_subquery_string_dict__(broken_out_typed_list, key_column_name,
